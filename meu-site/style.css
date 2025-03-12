@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #map {
+    height: 850px;  /* Definindo a altura do mapa */
+    width: 100%;    /* O mapa ocupa toda a largura */
+  }
+  

@@ -1,0 +1,32 @@
+-- database: ./quilombola.Db
+
+CREATE TABLE comunidades_quilombolas (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    municipio TEXT,
+    latitude DECIMAL(9,6) NOT NULL,
+    longitude DECIMAL(9,6) NOT NULL,
+    atrativos TEXT,
+    estado VARCHAR(100)
+);
+
+INSERT INTO comunidades_quilombolas (nome, municipio, latitude, longitude, atrativos, estado) VALUES
+('Comunidade Quilombola do Kaonge', 'Localizada no município de Cachoeira', -12.5923, -38.9541, '', ''),
+('Comunidade Quilombola do Dendê', 'Situada no Recôncavo Baiano, esta comunidade é conhecida por sua produção de azeite de dendê artesanal.', -13.0045, -39.1123, '', ''),
+('Comunidade Quilombola de Zumbi', 'A comunidade Zumbi luta pelo direito à terra.', -12.462, -38.98, '', ''),
+('Comunidade Quilombola de São João', 'A comunidade de São João está em processo de regularização fundiária.', -12.431, -39.003, '', ''),
+('Comunidade Quilombola de Tatagema', '', -1.343, -57.034, '', ''),
+('Comunidade Quilombola do Palmares', '', -9.168, -36.084, '', ''),
+('Comunidade Quilombola do Cabula', '', -12.959, -38.458, '', ''),
+('Comunidade Quilombola de Kalunga', '', -13.443, -47.414, '', ''),
+('Comunidade Quilombola do Monte Alegre', '', -20.724, -41.270, '', ''),
+('Comunidade Quilombola de Funas', '', -20.158, -54.578, '', ''),
+('Comunidade Quilombola do Remanso', '', -12.571, -41.396, '', ''),
+('Comunidade Quilombola de Quingoma', '', -12.854, -38.343, '', ''),
+('Comunidade Quilombola de Boa Sorte', '', -19.916, -55.145, '', ''),
+('Comunidade Quilombola de Pedras Negras', '', -12.839, -62.874, '', ''),
+('Comunidade Quilombola do Campinho', 'Paraty', -23.300, -44.700, 'Situada próxima às praias de Paraty, a comunidade oferece aos visitantes a chance de conhecer a culinária local, apresentações de jongo e artesanato típico. Além disso, a região é cercada por belas paisagens naturais, incluindo praias e áreas de mata preservada.', 'Rio de Janeiro'),
+('Comunidade Quilombola de Caianas dos Crioulos', '', -7.099, -35.704, '', ''),
+('Comunidade Quilombola de Cafundo', '', -23.666, -47.663, '', ''),
+('Comunidade Quilombola de Bracui', '', -22.915, -44.414, '', '');
+
